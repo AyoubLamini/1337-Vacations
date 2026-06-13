@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@800&family=Hepta+Slab:wght@200&family=Tilt+Prism&display=swap');
+
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+  color: #000000ed;
+  background-image: url('../images/13372.gif');
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+}
+img {
+  width: 70%;
+  height: auto;
+}
+.login-form, .ResetPassword-form {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  max-width: 300px;
+  flex-wrap: wrap;
+  
+}
+@media screen and (min-width: 540px) {
+  .auth-form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding: 5rem;
+    border: 1px solid #c9c9c9da;
+    border-radius: 10px;
+    margin: 0.5rem;
+    flex-wrap: wrap;
+  }
+} 
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+input, .err-div{
+  margin: 0.5rem 0 0;
+  padding: 1rem;
+  border: 0.1px solid rgb(226, 226, 226);
+  border-radius: 10px;
+}
+input:focus{
+  outline: 1px solid #0086df ;
+}
+.loginButton {
+  border: none;
+  background-color: #A3DE83;
+  padding: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #000000ed;
+  transition: all 0.3s;
+}
+.loginButton:hover{
+  background-color: #ECECEC ;
+}
+.show-pass {
+  text-align: right;
+}
+.error-message {
+  color: #DE3163;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: left;
+  transition: all 2s;
+}
+.link-btn {
+  text-align: left;
+  font-size: 0.7em;
+  background: none;
+  color: #000000ed;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.btns-div{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.send-btn{
+  min-width: 140px;
+  
+}
+.cancel-btn{
+  background-color: #ECECEC;
+  min-width: 70px;
+  border-radius: 6px;
+}
+.cancel-btn:hover{
+  background-color: #2A2A2A;
+  color: white;
+  border-radius: 6px;
+}

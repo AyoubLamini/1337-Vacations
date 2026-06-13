@@ -1,0 +1,145 @@
+@media screen and (min-width: 1481px) {
+    .applications{
+        width: 112%;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1480px) {
+    .applications{
+        width: 118%;
+    }
+}
+table {
+    user-select:text;
+}
+table .table-rows:hover{
+    outline: var(--color-primary) 1.5px solid;
+    border-radius: 4px;
+    transition: outline 100ms;
+    cursor: pointer;
+}
+table .decision{
+        position: relative;
+        bottom: 10px;
+        animation: showDesision 150ms ease-in-out forwards;
+}
+.closed{
+    display: none;
+}
+.clicked{
+    display: table-row;
+}
+@keyframes showDesision {
+    to{
+        bottom: 0px;
+    }
+}
+table tr td button{
+        text-align: center;
+        background: transparent;
+        cursor: pointer;
+        
+        
+}
+.approve{
+    outline: 1.8px solid var(--color-success-variant);
+    width: 100%;
+    height: 100%;
+    color: var(--color-success-variant);
+    border-radius: 4px;
+    transition: all 300ms;
+}
+.approve:hover{
+    color: var(--color-white);
+    background-color: var(--color-success-variant);
+}
+.decline{
+    outline: 1.8px solid var(--color-danger-variant) ;
+    width: 100%;
+    height: 100%;
+    color: var(--color-danger-variant);
+    border-radius: 4px;
+    transition: all 300ms;
+}
+.decline:hover{
+    color: var(--color-white);
+    background-color: var(--color-danger-variant);
+}
+
+
+/* --------------- Pop up--------------------------  */
+.applications {
+    position: relative;
+}
+
+.applications.blur::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    backdrop-filter: blur(5px);
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.applications.blur.popup::before {
+    z-index: 1;
+}
+
+.applications.blur.active::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    z-index: 2;
+}
+
+.popup.active {
+    opacity: 1;
+    visibility: visible;
+}
+/*  - ------------------------------- */ 
+.confirm{
+    padding: 16px;
+    width: 7rem;
+    margin: 1rem 1rem 0 0 ;
+    transition: all 300ms;
+    color: black;
+    
+    
+}
+.confirm:hover{
+    color: var(--color-white);
+    background-color: var(--color-success-variant);
+    
+}
+.cancel{
+    color: var(--color-dark);
+    padding: 16px;
+    width: 7rem;
+    color: black;
+}
+.cancel:hover{
+    color: var(--color-white);
+    background-color: var(--color-dark);
+    
+}
+
+
