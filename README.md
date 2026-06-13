@@ -28,7 +28,7 @@ Installation
 
 Clone the repository:
 
-git clone https://github.com//1337-vacations
+git clone https://github.com/AyoubLamini/1337-Vacations.git
 
 Navigate to the project directory:
 
