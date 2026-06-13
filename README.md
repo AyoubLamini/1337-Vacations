@@ -1,6 +1,5 @@
 1337-Vacations
 
-<<<<<<< HEAD
 Frontend project for vacation management built during my internship as part of my training at 1337 (42 Network) in Khouribga, Morocco — a peer-learning programming school where students work on real projects and gain professional experience.
 
 This application serves as a vacation management interface for 1337 students, allowing them to browse and manage vacation requests. It was my first project using React.js, and it helped me learn modern frontend development concepts including hooks, state management, theming, and responsive UI design.
@@ -122,4 +121,3 @@ Author
 Ayoub Lamini
 
 Computer Science Student | 1337 (42 Network)
->>>>>>> aeca84576173b31f8ba7b0f64f75d2bf8de87d89
